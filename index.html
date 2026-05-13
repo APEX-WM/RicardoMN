@@ -31,8 +31,10 @@
   .role{font-size:13px;font-weight:500;color:var(--gray-500)}
   .body{padding:24px 28px 28px}
   .divider{height:1px;background:var(--gray-200);margin-bottom:22px}
-  .message{font-size:15px;line-height:1.65;color:var(--gray-700);margin-bottom:8px}
-  .services{font-size:11px;font-weight:600;color:var(--indigo);margin-bottom:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.01em}
+  .message{font-size:15px;line-height:1.65;color:var(--gray-700);margin-bottom:10px}
+  .services{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;margin-bottom:22px}
+  .services span{font-size:11px;font-weight:600;color:var(--indigo);display:flex;align-items:center;gap:5px}
+  .services span::before{content:'·';color:var(--indigo);font-size:14px;line-height:1}
   .cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--black);color:var(--white);font-family:'Figtree',sans-serif;font-size:15px;font-weight:700;text-decoration:none;border-radius:50px;padding:15px 28px;transition:background .18s,transform .15s;letter-spacing:-.01em;margin-bottom:12px}
   .cta:hover{background:var(--indigo);transform:translateY(-1px)}
   .cta:active{transform:translateY(0)}
@@ -73,7 +75,12 @@
 
     <p class="message">Agenda una llamada para conocer tus objetivos, entender tu contexto y diseñar una estrategia para lograrlos.</p>
 
-    <p class="services">Asignación y gestión · Optimización fiscal · Custodia internacional</p>
+    <div class="services">
+      <span>Asignación y gestión</span>
+      <span>Optimización fiscal</span>
+      <span>Custodia internacional</span>
+      <span>Plan integral</span>
+    </div>
 
     <a class="cta" href="https://outlook.office.com/bookwithme/user/0cd7cbddc8b14596b6432e9d70efabb8@gbm.com.mx/meetingtype/ub8YH-NHyEK59M2gGB92XQ2?anonymous&ep=mcard__;!!Pt2OOfOu!nOirEfCMnThfJtDnhn-M9dxMD5Taa_XLa-jpXm3kp7p3NPNJ8F6HTZPqjkEX7fiU-L3OaOc1BdOAmQ$" target="_blank" rel="noopener">
       Agendar reunión <span class="arrow">→</span>
